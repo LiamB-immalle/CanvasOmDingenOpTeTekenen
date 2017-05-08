@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CanvasOmDingenOpTeTekenen;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,19 +16,32 @@ using System.Windows.Shapes;
 
 namespace CanvasOmDingenOpTeTekenen
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-            Ellipse e = new Ellipse();
-            e.Fill = new SolidColorBrush(Colors.Black);
-            e.Height = 500;
-            e.Width = 500;
-            c.Children.Add(e);
+            groep.Add(circle1);
+            groep.Add(square1);
+        }
+
+        Circle circle1 = new Circle(40, 40);
+        Square square1 = new Square(180, 180);
+        List<Shape> groep = new List<Shape>();
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            c.Children.Clear();
+
+            foreach (Shape shape in groep)
+            {
+                shape.DisplayOn(c);
+            }
+        }
+
+        private void Remove_Click(object sender, RoutedEventArgs e)
+        {
+            c.Children.Clear();
         }
     }
 }
