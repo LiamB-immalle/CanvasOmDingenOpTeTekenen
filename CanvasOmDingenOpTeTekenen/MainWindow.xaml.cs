@@ -23,6 +23,11 @@ namespace CanvasOmDingenOpTeTekenen
         public MainWindow()
         {
             InitializeComponent();
+            Ellipse e = new Ellipse();
+            e.Fill = new SolidColorBrush(Colors.Black);
+            e.Height = 500;
+            e.Width = 500;
+            c.Children.Add(e);
         }
     }
 }
