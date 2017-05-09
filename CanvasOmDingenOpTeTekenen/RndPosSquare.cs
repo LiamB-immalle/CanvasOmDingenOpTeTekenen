@@ -14,13 +14,13 @@ namespace CanvasOmDingenOpTeTekenen
         static Random rndGen = new Random();
 
 
-        public RndPosSquare() : base(rndGen.Next(1, 150), rndGen.Next(1, 150))
+        public RndPosSquare() : base(rndGen.Next(1, 200), rndGen.Next(1, 200)) //Create a random position when an object of the class RndPosSquare is created.
         {           
         }
 
         public override void DisplayOn(Canvas drawArea)
         {
-            //Made CreateRectangle() and "Rectangle rect" protected in Square class
+            //Made CreateRectangle() and "Rectangle rect" protected in Square class.
             CreateRectangle();
             base.DisplayOn(drawArea);
         }

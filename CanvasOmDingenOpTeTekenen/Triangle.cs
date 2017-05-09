@@ -31,6 +31,8 @@ namespace CanvasOmDingenOpTeTekenen
             tria = new Polygon();
             tria.Stroke = brush;
             tria.Margin = new Thickness(x, y, 0, 0);
+
+            //Create a point for every corner who get connected by a line.
             tria.Points = new PointCollection() { new Point(x, y), new Point(x, y+100), new Point(x+100, y) };
         }
     }

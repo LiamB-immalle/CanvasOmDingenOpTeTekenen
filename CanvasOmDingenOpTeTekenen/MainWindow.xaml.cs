@@ -39,10 +39,10 @@ namespace CanvasOmDingenOpTeTekenen
             RndPosSquare r = new RndPosSquare();
             r.DisplayOn(c);
 
-            //foreach (Shape shape in groep)
-            //{
-            //    shape.DisplayOn(c);
-            //}
+            foreach (Shape shape in groep)
+            {
+                shape.DisplayOn(c);
+            }
         }
 
         private void Remove_Click(object sender, RoutedEventArgs e)
