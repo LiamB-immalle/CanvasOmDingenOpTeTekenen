@@ -23,20 +23,26 @@ namespace CanvasOmDingenOpTeTekenen
             InitializeComponent();
             groep.Add(circle1);
             groep.Add(square1);
+            groep.Add(t);
         }
 
         Circle circle1 = new Circle(40, 40);
         Square square1 = new Square(180, 180);
+        Triangle t = new Triangle(60, 60);
         List<Shape> groep = new List<Shape>();
+
+        
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             c.Children.Clear();
+            RndPosSquare r = new RndPosSquare();
+            r.DisplayOn(c);
 
-            foreach (Shape shape in groep)
-            {
-                shape.DisplayOn(c);
-            }
+            //foreach (Shape shape in groep)
+            //{
+            //    shape.DisplayOn(c);
+            //}
         }
 
         private void Remove_Click(object sender, RoutedEventArgs e)

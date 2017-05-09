@@ -11,7 +11,7 @@ namespace CanvasOmDingenOpTeTekenen
 {
     public class Square : Shape
     {
-        private Rectangle rect;
+        protected Rectangle rect;
 
         public Square(int initX, int initY)
         {
@@ -25,7 +25,7 @@ namespace CanvasOmDingenOpTeTekenen
             drawArea.Children.Add(rect);
         }
 
-        private void CreateRectangle()
+        protected void CreateRectangle()
         {
             rect = new Rectangle();
             rect.Stroke = brush;
