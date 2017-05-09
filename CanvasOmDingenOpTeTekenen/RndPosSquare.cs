@@ -14,7 +14,7 @@ namespace CanvasOmDingenOpTeTekenen
         static Random rndGen = new Random();
 
 
-        public RndPosSquare() : base(rndGen.Next(1, 200), rndGen.Next(1, 200)) //Create a random position when an object of the class RndPosSquare is created.
+        public RndPosSquare() : base(rndGen.Next(1, 400), rndGen.Next(1, 400)) //Create a random position when an object of the class RndPosSquare is created.
         {           
         }
 

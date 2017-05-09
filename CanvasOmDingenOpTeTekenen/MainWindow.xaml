@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CanvasOmDingenOpTeTekenen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="600">
     <Grid>
-        <Canvas x:Name="c" Margin="90,10,10,10"/>
+        <Canvas x:Name="c" Margin="90, 20,20,30"/>
         <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,10,0,0" Click="button_Click"/>
         <Button x:Name="Remove" Content="Remove" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,30,0,0" Click="Remove_Click"/>
 

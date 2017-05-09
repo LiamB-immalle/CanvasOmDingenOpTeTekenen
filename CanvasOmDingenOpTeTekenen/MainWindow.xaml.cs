@@ -36,8 +36,12 @@ namespace CanvasOmDingenOpTeTekenen
         private void button_Click(object sender, RoutedEventArgs e)
         {
             c.Children.Clear();
-            RndPosSquare r = new RndPosSquare();
-            r.DisplayOn(c);
+
+            for (var i = 0; i < 100; i++)
+            {
+                RndPosSquare r = new RndPosSquare();
+                r.DisplayOn(c);
+            }
 
             foreach (Shape shape in groep)
             {
